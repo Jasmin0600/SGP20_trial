@@ -11,4 +11,5 @@ matplotlib>=1.4.3
 pandas>=0.19
 pickletools==2.3
 gzip==3.6
+pickle>==3.8
 
