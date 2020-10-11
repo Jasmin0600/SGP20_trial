@@ -6,7 +6,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        
+        <script type="text/javascript">
+          document.querySelector('.toggler').onclick = () => {
+    document.querySelector('.nav').classList.toggle('open');
+  }
+        </script>
       <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 * {
@@ -269,8 +273,8 @@ margin-top: 20px;
   transform: rotate(180deg);
   opacity:0.5;
 }
+</style>
 
-      </style>
     </head>
     <body>
       <section>
@@ -296,7 +300,7 @@ margin-top: 20px;
       <div class="container  pt-5  pb-4">
         <div class="row">
           <div class="col-md-6 order-md-6">
-            <img src="https://drive.google.com/uc?id=1fe8GusPumP1OXU_Gysn53ZI-7qwcyesQ" alt="" class="w-100 pt-5" />
+            <img src="https://drive.google.com/uc?id=1sPe30Jiaecs0BaGJ6WXVE35qR7f8NhuR" alt="" class="w-100 pt-5" />
           </div>
           <div class="col-md-6 order-md-1">
             <div class="row align-items-center h-100">
@@ -443,10 +447,10 @@ margin-top: 20px;
                                <input type="text" name="f" placeholder="Enter Rainfall" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
                                 <input type="text" name="g" placeholder="Enter Temperature" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
                                 <br>
-                             <center><button type="submit" class="btn rounded ex_btn">Predict</button></center>
+                             <button type="submit" class="btn rounded ex_btn">Predict</button>
             </form>
           <br>
-          <center><h3> {{ prediction_text }}</h3></center>
+          <h3> {{ prediction_text }}</h3>
         </div>
         
       </div>
@@ -508,6 +512,11 @@ margin-top: 20px;
               </div>
             </div>
           </div>
+
+
+          
+
+          
         </div>
       </div>
     </section>
@@ -521,6 +530,7 @@ margin-top: 20px;
       <h3 class="ft_rsm">Kisan Mitra</h3>
       <h5 class="align-self-center ml-2 ml-sm-0 fintro ">Pridict crop @ just one click</h5>
       </div>
+      
       
       </footer>
  </section>
