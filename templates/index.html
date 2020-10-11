@@ -1,0 +1,273 @@
+<html>
+    <head>
+        <title>
+            Kisan Mitra
+        </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <section>
+      <nav class='nav' id="navv">
+        <div class='container'>
+          <a class='nav-item nav-brand' href='#'>Kisan Mitra</a>
+          <button class='toggler'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class='nav-collapse' id="navv">
+            <a class='nav-item nav-link sss' href='#'>Home</a>
+            <a class='nav-item nav-link sss' href='#'>About</a>
+            <a class='nav-item nav-link sss' href='#'>Team</a>
+            <a class='nav-item nav-link sss' href='#'>Contact</a>
+            <a class='nav-item nav-link sss' href='#'>Predict</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section  >
+      <div class="container  pt-5  pb-4">
+        <div class="row">
+          <div class="col-md-6 order-md-6">
+            <img src="env.svg" alt="" class="w-100 pt-5" />
+          </div>
+          <div class="col-md-6 order-md-1">
+            <div class="row align-items-center h-100">
+              <div class="col">
+                <h1 class="display-4 hero_clr">Kisanmitra</h1>
+                <p class="lead">Pridict crop @ just one click
+                  <br /><br />
+                  <a href="#about" type="button" class="btn rounded ex_btn" >EXPLORE</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section >
+      <div class="col-10 mx-auto text-center mt-5 ">
+        <h1>What we do?</h1>
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin ipsum at euismod commodo. Etiam ullamcorper, dui ut consectetur sodales, mi enim faucibus turpis, sit amet vulputate elit orci vitae arcu. Vivamus quis hendrerit leo, id rhoncus turpis. Suspendisse dignissim accumsan tincidunt. Praesent faucibus sodales neque, ac porttitor nisl scelerisque sed. Quisque sed aliquam nunc, non luctus risus. Donec vel aliquam purus. Nulla a aliquam augue. Donec id justo ut nibh dictum ornare et sit amet diam. Pellentesque sit amet risus tincidunt, congue nisl nec, accumsan diam. Praesent vel consectetur est, ut semper odio.</p>
+        <br>
+        <br>
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin ipsum at euismod commodo. Etiam ullamcorper, dui ut consectetur sodales, mi enim faucibus turpis, sit amet vulputate elit orci vitae arcu. Vivamus quis hendrerit leo, id rhoncus turpis. Suspendisse dignissim accumsan tincidunt. Praesent faucibus sodales neque, ac porttitor nisl scelerisque sed. Quisque sed aliquam nunc, non luctus risus. Donec vel aliquam purus. Nulla a aliquam augue. Donec id justo ut nibh dictum ornare et sit amet diam. Pellentesque sit amet risus tincidunt, congue nisl nec, accumsan diam. Praesent vel consectetur est, ut semper odio.</p>
+        
+      </div>
+    </section>
+    <section>
+      <div class="col-10 mx-auto  mt-5 ">
+        <div class="text-center">
+        <h1>Predict</h1>
+     </div>
+        <div class="row">
+      
+            <form class="w-100" action="/predict" method="post">
+              <div> 
+              <select id="District" name="a" class="form-control  col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                        <option selected="" value="" disabled selected>Select District</option>
+                        <option value="0">Ahmedabad</option>
+                        <option value="1">Amreli</option> 
+                        <option value="2">Anand</option>
+                        <option value="3">Banaskatha</option> 
+                        <option value="4">Bharuch</option> 
+                        <option value="5">Bhavnagar</option> 
+                        <option value="6">Dang</option> 
+                        <option value="7">Dohad</option>  
+                        <option value="8">Gandhinagar</option> 
+                        <option value="9">Jamnagar</option>
+                        <option value="10">Junagadh</option>  
+                        <option value="11">Kutch</option> 
+                        <option value="12">Kheda</option> 
+                        <option value="13">Mehsana</option> 
+                        <option value="14">Narmada</option> 
+                        <option value="15">Navsari</option>
+                        <option value="16">Panch Mahal</option>
+                        <option value="17">Patan</option>
+                        <option value="18">Porbandar</option>
+                        <option value="19">Rajkot</option>
+                        <option value="20">Sabarkatha</option>
+                        <option value="21">Surat</option>
+                        <option value="22">Surendranagar</option>
+                        <option value="23">Tapi</option>
+                        <option value="24">Vadodara</option>
+                        <option value="25">Valsad</option>
+                              </select>
+                             
+              <select id="Season" name="c" class="form-control  col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                        <option selected="" value="" disabled selected>Select Season</option>
+                        <option value="0">Kharif</option>
+                        <option value="1">Rabi</option> 
+                        <option value="2">Summer</option>   
+                        <option value="3">Whole Year</option>          
+                              </select>
+                              
+              <select id="crop" name="d" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                        <option selected="" value="" disabled selected>Select Crop</option>
+                        <option value="0">Arhar/Tur</option> 
+                        <option value="1">Bajra</option>
+                        <option value="5">Dry chillies</option>
+                        <option value="8">Groundnut</option>
+                        <option value="10">Jowar</option>
+                        <option value="12">Moong(Green Gram)</option>
+                        <option value="13">Moth</option>
+                        <option value="17">Other Kharif pulses</option>
+                        <option value="29">Urad</option>
+                        <option value="7">Gram</option>
+                        <option value="22">Rapeseed &Mustard</option>
+                        <option value="30">Wheat</option>
+                        <option value="2">Banana</option>
+                        <option value="3">Castor seed</option>
+                        <option value="4">Cotton(lint)</option>
+                        <option value="11">Maize</option>
+                        <option value="19">Potato</option>
+                        <option value="20">Pulses total</option>
+                        <option value="23">Rice</option>
+                        <option value="24">Sesamum</option>
+                        <option value="27">Sugarcane</option>
+                        <option value="28">Tobacco</option>
+                        <option value="16">Other Cereals & Millets</option>
+                        <option value="25">Small millets</option>
+                        <option value="14">Oilseeds total</option>
+                        <option value="15">Onion</option>
+                        <option value="9">Guar seed</option>
+                        <option value="31">other oilseeds</option>
+                        <option value="6">Garlic</option>
+                        <option value="18">Other Rabi pulses</option>
+                        <option value="21">Ragi</option>
+                        <option value="26">Soyabean</option> 
+                              </select>
+                              <select id="year" name="b" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                        <option selected="" value="" disabled selected>Select Year</option>
+                        <option value="0">2020</option>
+                        <option value="1">2021</option> 
+                        <option value="2">2022</option>
+                        <option value="3">2023</option> 
+                        <option value="4">2024</option> 
+                        <option value="5">2025</option> 
+                        <option value="6">2026</option> 
+                        <option value="7">2027</option>  
+                        <option value="8">2028</option> 
+                        <option value="9">2029</option>
+                        <option value="10">2030</option>  
+                        <option value="11">2031</option> 
+                        <option value="12">2032</option> 
+                        <option value="13">2033</option> 
+                        <option value="14">2034</option> 
+                        <option value="15">2035</option>
+                        <option value="16">2036</option>
+                        <option value="17">2037</option>
+                        <option value="18">2038</option>
+                        <option value="19">2039</option>
+                        <option value="20">2040</option>
+                        <option value="21">2041</option>
+                        <option value="22">2042</option>
+                        <option value="23">2043</option>
+                        <option value="24">2044</option>
+                        <option value="25">2045</option>
+                        <option value="26">2046</option>
+                        <option value="27">2047</option>
+                        <option value="28">2048</option>
+                        <option value="29">2049</option>
+                        <option value="30">2050</option>
+                              </select>
+                              <input type="text" name="e" placeholder="Enter Area" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                               <input type="text" name="f" placeholder="Enter Rainfall" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                                <input type="text" name="g" placeholder="Enter Temperature" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                                <br>
+                             <button type="submit" class="btn rounded ex_btn">Predict</button>
+            </form>
+          
+        </div>
+        
+      </div>
+    </section>
+    <section>
+      <div class="col-10 mx-auto text-center mt-5 ">
+        <h1>Team</h1>
+        <div class="row ">
+          
+
+          <div class="col-xs-3 col-sm-3 col-md-3" data-aos="fade-up" data-aos-delay="">
+            <div class="team-member">
+              <figure>
+                
+                <img src="team.jpg" alt="Name" class="img-fluid">
+              </figure>
+              <div class="p-3">
+                <h3>Name</h3>
+                <span class="position">Id</span>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-xs-3 col-sm-3 col-md-3" data-aos="fade-up" data-aos-delay="">
+            <div class="team-member">
+              <figure>
+                
+                <img src="team.jpg" alt="Name" class="img-fluid">
+              </figure>
+              <div class="p-3">
+                <h3>Name</h3>
+                <span class="position">Id</span>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-xs-3 col-sm-3 col-md-3" data-aos="fade-up" data-aos-delay="">
+            <div class="team-member">
+              <figure>
+                
+                <img src="team.jpg" alt="Name" class="img-fluid">
+              </figure>
+              <div class="p-3">
+                <h3>Name</h3>
+                <span class="position">Id</span>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-xs-3 col-sm-3 col-md-3" data-aos="fade-up" data-aos-delay="">
+            <div class="team-member">
+              <figure>
+                
+                <img src="team.jpg" alt="Name" class="img-fluid">
+              </figure>
+              <div class="p-3">
+                <h3>Name</h3>
+                <span class="position">Id</span>
+              </div>
+            </div>
+          </div>
+
+
+          
+
+          
+        </div>
+      </div>
+    </section>
+    
+   <div>
+<img src="grass.png" class="img-fluid se_imgg">
+</div>
+   <section class="footers "  >
+    <footer style=" height: 25vh; overflow: hidden;" class="bg-light ">
+      <div class="d-flex justify-content-between align-items-center align-middle footer pl-1 pt-5 mt-3">
+      <h3 class="ft_rsm">Kisan Mitra</h3>
+      <h5 class="align-self-center ml-2 ml-sm-0 fintro ">Pridict crop @ just one click</h5>
+      </div>
+      
+      
+      </footer>
+ </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        
+    </body>
+</html>
