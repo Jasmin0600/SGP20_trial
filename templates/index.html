@@ -439,14 +439,14 @@ margin-top: 20px;
                         <option value="29">2049</option>
                         <option value="30">2050</option>
                               </select>
-                              <input type="text" name="e" placeholder="Enter Area" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
-                               <input type="text" name="f" placeholder="Enter Rainfall" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
-                                <input type="text" name="g" placeholder="Enter Temperature" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                              <input type="text" name="e" placeholder="Enter Area(sq. meter)" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                               <input type="text" name="f" placeholder="Enter Rainfall(mm)" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
+                                <input type="text" name="g" placeholder="Enter Temperature(°C)" class="form-control col-xs-3 col-sm-3 col-md-3 d-inline-block m-1">
                                 <br>
                              <button type="submit" class="btn rounded ex_btn">Predict</button>
                   </form>
           <br>
-          <h3> {{ prediction_text }}</h3></center>
+          <h3> {{ prediction_text }} per sq. meter</h3></center>
         </div>
         
       </div>
