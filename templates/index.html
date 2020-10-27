@@ -541,6 +541,24 @@ margin-top: 20px;
           document.querySelector('.toggler').onclick = () => {
     document.querySelector('.nav').classList.toggle('open');
   }
-        </script>    
+           if ($(window).width() < 766) {
+
+            $(".nav-link").click(function(){
+                       $(".toggler").click();
+
+        });
+          }
+        $(window).resize(function() {
+          if ($(window).width() < 766) {
+            $(".nav-link").click(function(){                
+                $(".toggler").click();
+
+        });
+          }
+        });
+          
+        </script>  
+        
+        
     </body>
 </html>
