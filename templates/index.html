@@ -536,12 +536,12 @@ margin-top: 20px;
  </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="main.js"></script>
-    <script type="text/javascript">
-          document.querySelector('.toggler').onclick = () => {
+        
+    <script>
+           document.querySelector('.toggler').onclick = () => {
     document.querySelector('.nav').classList.toggle('open');
-  }
-           if ($(window).width() < 766) {
+   }
+   if ($(window).width() < 766) {
 
             $(".nav-link").click(function(){
                        $(".toggler").click();
@@ -557,7 +557,7 @@ margin-top: 20px;
           }
         });
         
-        (function ($) {
+   (function ($) {
             $(document).ready(function () {
                 $('a.nav-link[href*="#"]').off();
                 $(document).on('click', 'a.nav-link[href*="#"]', function (e) {
@@ -572,8 +572,7 @@ margin-top: 20px;
                 });
             });
         })(jQuery);
-          
-        </script>  
+        </script>
         
         
     </body>
