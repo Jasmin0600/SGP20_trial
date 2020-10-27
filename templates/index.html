@@ -556,6 +556,22 @@ margin-top: 20px;
         });
           }
         });
+        
+        (function ($) {
+            $(document).ready(function () {
+                $('a.nav-link[href*="#"]').off();
+                $(document).on('click', 'a.nav-link[href*="#"]', function (e) {
+
+                    e.preventDefault();
+                    // console.log($(this).attr('href'));
+                    var hash = '#' + $(this).attr('href').split('#')[1];
+
+                    $('html, body').stop().animate({
+                        scrollTop: $(hash).offset().top - 71
+                    });
+                });
+            });
+        })(jQuery);
           
         </script>  
         
